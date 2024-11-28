@@ -1,7 +1,7 @@
 # -------------------
 # Jekyll Config
 # --------------------
-baseurl: ""
+baseurl: "wax-river-studios.github.io"
 url: ""
 permalink: pretty
 markdown: kramdown
