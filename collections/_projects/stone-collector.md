@@ -10,7 +10,6 @@ categories: ["Short Film"]
 credits:
     written: Ryan Patrick Smith
     directed: Ryan Patrick Smith
-    produced: Liz Fischer
     starring: Bill Karnovsky, Kelcie Russell
 gallery:
   - image: "/assets/images/gen/projects/stone-collector-1.png"

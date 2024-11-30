@@ -21,19 +21,23 @@ body_classes: page-category
 <div class="section pt-0">
   <div class="container">
     {% assign category = page.title %}
-    {% for post in site.categories[category] %}
-      <div class="row">
-        <div class="col-12 col-md-8 mb-2">
-          {% include theme/cards/card-post.html 
-            title=post.title
-            date=post.date
-            description=post.description 
-            thumbnail=post.thumbnail 
-            url=post.url 
-            style="list"
-          %}
+    {% assign items = site.projects | concat: site.posts | sort: 'date' | reverse %}
+    {% for post in items %}
+      {% if post.categories contains category%}
+        <div class="row">
+          <div class="col-12 col-md-8 mb-2">
+            {% include theme/cards/card-post.html
+              title=post.title
+              date=post.date
+              description=post.description
+              post_type=post.collection
+              thumbnail=post.thumbnail
+              url=post.url
+              style="list"
+            %}
+          </div>
         </div>
-      </div>
+      {% endif %}
     {% endfor %}
   </div>
 </div>

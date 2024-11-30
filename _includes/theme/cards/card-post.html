@@ -5,6 +5,7 @@
 {% assign fa_icon = include.fa_icon %}
 {% assign url = include.url %}
 {% assign date = include.date %}
+{% assign post_type = include.post_type %}
 {% assign authors = include.authors %}
 {% assign categories = include.categories %}
 {% assign style = include.style | default: "column" %}
@@ -37,7 +38,13 @@
 
         {% if date %}
           <div class="card-date">
-            <span class="post-date-date">{{ date | date_to_long_string }}</span>
+            <span class="post-date-date">
+              {% if post_type == "projects" %}
+              {{ date | date: "%Y"}}
+              {% else %}
+              {{ date | date_to_long_string }}
+              {% endif %}
+            </span>
           </div>
         {% endif %}
 

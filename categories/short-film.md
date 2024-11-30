@@ -1,4 +1,4 @@
 ---
 layout: category
-title: Short Film
+title: "Short Film"
 ---
