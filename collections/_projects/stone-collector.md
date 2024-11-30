@@ -1,7 +1,7 @@
 ---
 layout: project # alternative layouts: project, project-left, project-right, project-top
 title: "The Stone Collector"
-description: "Breathing new life into old industrial estates"
+description: 
 date: 2022-12-30
 weight: 5
 thumbnail:  "/assets/images/gen/projects/stone-collector-1.png"
