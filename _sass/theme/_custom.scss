@@ -8,3 +8,9 @@
         text-decoration-color: var(--color-base-bg-3);
     }
 }
+
+
+
+.icon-invert img{
+    filter: invert(1);
+}

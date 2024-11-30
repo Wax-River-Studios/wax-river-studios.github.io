@@ -36,6 +36,10 @@ body_classes: page-project
         <div class="project-client"><strong>Client </strong><span>{{ page.client }}</span></div>
         {% endif %} {% if page.role %}
         <div class="project-role"><strong>Role </strong><span>{{ page.role }}</span></div>
+        {% endif %}  {% if page.writer %}
+        <div class="project-role"><strong>Written by </strong><span>{{ page.writer }}</span></div>
+        {% endif %} {% if page.director %}
+        <div class="project-director"><strong>Director </strong><span>{{ page.director }}</span></div>
         {% endif %}
       </div>
 

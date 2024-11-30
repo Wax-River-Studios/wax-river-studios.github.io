@@ -28,15 +28,5 @@
     "title": "Instagram",
     "fa_icon": "fab fa-instagram-square",
     "url": "https://www.zerostatic.io"
-  },
-  {
-    "title": "Linkedin",
-    "fa_icon": "fab fa-linkedin",
-    "url": "https://www.zerostatic.io"
-  },
-  {
-    "title": "Mailchimp",
-    "fa_icon": "fab fa-mailchimp",
-    "url": "https://www.zerostatic.io"
   }
 ]
