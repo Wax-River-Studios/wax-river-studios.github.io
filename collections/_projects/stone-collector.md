@@ -4,8 +4,8 @@ title: "The Stone Collector"
 description: "Breathing new life into old industrial estates"
 date: 2022-12-30
 weight: 5
-thumbnail: "/assets/images/gen/projects/project-2-1-thumbnail.webp"
-image: "/assets/images/gen/projects/project-2-1.webp"
+thumbnail:  "/assets/images/gen/projects/stone-collector-1.png"
+image: "/assets/images/gen/projects/stone-collector-2.png"
 categories: ["Short Film"]
 credits:
     written: Ryan Patrick Smith
