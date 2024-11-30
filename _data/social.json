@@ -8,5 +8,10 @@
     "title": "Github",
     "fa_icon": "fab fa-github",
     "url": "https://github.com/Wax-River-Studios/"
+  },
+  {
+    "title": "Coverfly",
+    "fa_icon": "fab fa-c",
+    "url": "https://writers.coverfly.com/profile/Ryan-Patrick-Smith/"
   }
 ]
