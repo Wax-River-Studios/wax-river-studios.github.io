@@ -18,6 +18,5 @@ gallery:
   - image: "/assets/images/gen/projects/stone-collector-5.png"
 ---
 
-Log line here
-
+The lives of an overburdened old man and a carefree young lady momentarily but meaningfully overlap.
 Nano-budget short film written and produced over the course of 2 months.
