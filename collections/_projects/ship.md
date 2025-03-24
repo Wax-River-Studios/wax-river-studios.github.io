@@ -11,6 +11,7 @@ credits:
     design: Ryan Patrick Smith & Liz Fischer
 gallery:
   - image: "/assets/images/gen/projects/Placeholder_view_vector.svg.png"
+published: false
 ---
 In the not-so-distant future, Starblaze has outpaced its megacorp rivals to become the premier name in intragalactic logistics, ferrying precious cargo between star systems at a pace once thought impossible.
   
