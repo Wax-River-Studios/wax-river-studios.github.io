@@ -2,7 +2,7 @@
 layout: project
 title: "Scriveyn"
 description: 
-weight: 7
+weight: 9
 thumbnail: "assets/images/gen/projects/title.png"
 image: "assets/images/gen/projects/title.png"
 categories: ["Games"]
