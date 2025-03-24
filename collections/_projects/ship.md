@@ -4,8 +4,8 @@ title: "[Scifi Game]"
 description: 
 date: 2026-01-01
 weight: 5
-thumbnail: 
-image: 
+thumbnail: "/assets/images/gen/projects/placeholder-boardgame.png"
+image: "/assets/images/gen/projects/placeholder-boardgame.png"
 categories: ["Games"]
 credits:
     design: Ryan Patrick Smith & Liz Fischer
