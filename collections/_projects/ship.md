@@ -5,10 +5,12 @@ description:
 date: 2026-01-01
 weight: 5
 thumbnail: /assets/images/gen/projects/Placeholder_view_vector.svg.png
-image:
+image: /assets/images/gen/projects/Placeholder_view_vector.svg.png
 categories: ["Games"]
 credits:
+    design: Ryan Patrick Smith & Liz Fischer
 gallery:
+ -  image: "/assets/images/gen/projects/Placeholder_view_vector.svg.png"
 ---
 In the not-so-distant future, Starblaze has outpaced its megacorp rivals to become the premier name in intragalactic logistics, ferrying precious cargo between star systems at a pace once thought impossible.
   
