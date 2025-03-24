@@ -6,7 +6,7 @@ date:
 weight: 5
 thumbnail:  
 image:
-categories: ["Board Game"]
+categories: ["Games"]
 credits:
 gallery:
 ---
