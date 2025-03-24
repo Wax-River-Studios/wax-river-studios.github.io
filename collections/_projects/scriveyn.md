@@ -2,7 +2,7 @@
 layout: project
 title: "Scriveyn"
 description: 
-date: 2026-01-01
+date: 2025-01-01
 weight: 7
 thumbnail: "/assets/images/gen/projects/project-2-1-thumbnail.webp"
 image: "/assets/images/gen/projects/project-2-1.webp"
