@@ -1,5 +1,5 @@
 ---
-layout: project-left
+layout: project
 title: "Water Works Revitalisation"
 description: "Breathing new life into old industrial estates"
 date: 2018-12-20
