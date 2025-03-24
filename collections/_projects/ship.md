@@ -2,6 +2,7 @@
 layout: project # alternative layouts: project, project-left, project-right, project-top
 title: "[Scifi Game]"
 description: 
+date: 2026-01-01
 weight: 5
 thumbnail: 
 image: 
