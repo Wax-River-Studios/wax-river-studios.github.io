@@ -2,7 +2,7 @@
 layout: project # alternative layouts: project, project-left, project-right, project-top
 title: "Derelict"
 description: 
-date: 
+date: 2026
 weight: 5
 thumbnail:  
 image:
