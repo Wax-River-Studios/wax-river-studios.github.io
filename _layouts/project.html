@@ -29,7 +29,12 @@ body_classes: page-project
           <div class="project-date">
             <strong>Date </strong><span>{{ page.date | date: "%Y" }}</span>
           </div>
+        {% else %}
+          <div class="project-date">
+            <strong>Date </strong><span>TBD</span>
+          </div>
         {% endif %}
+        
 
         {% for line in page.credits %}
         <div class="project-role">
