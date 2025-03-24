@@ -8,6 +8,7 @@ thumbnail: "/assets/images/gen/projects/project-2-1-thumbnail.webp"
 image: "/assets/images/gen/projects/project-2-1.webp"
 categories: ["Development"]
 credits:
+  - test: Liz
 role: "Building Designer"
 gallery:
 image: "/assets/images/gen/projects/project-2-1.webp"
