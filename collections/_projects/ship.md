@@ -4,7 +4,7 @@ title: "[Scifi Game]"
 description: 
 date: 2026-01-01
 weight: 5
-thumbnail:  
+thumbnail: /assets/images/gen/projects/Placeholder_view_vector.svg.png
 image:
 categories: ["Games"]
 credits:
