@@ -3,6 +3,7 @@ layout: project
 title: "Scriveyn"
 description: 
 weight: 9
+date: 2028-01-01
 thumbnail: "assets/images/gen/projects/title.png"
 image: "assets/images/gen/projects/title.png"
 categories: ["Games"]
