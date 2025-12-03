@@ -1,11 +1,11 @@
 ---
 layout: project # alternative layouts: project, project-left, project-right, project-top
-title: "[Scifi Game]"
+title: "DERELICT"
 description: 
 date: 2026-01-01
 weight: 5
-thumbnail: "/assets/images/gen/projects/placeholder-boardgame.png"
-image: "/assets/images/gen/projects/placeholder-boardgame.png"
+thumbnail: "/assets/images/gen/projects/derelict quick logo.png"
+image: "/assets/images/gen/projects/derelict quick logo.png"
 categories: ["Games"]
 credits:
     design: Ryan Patrick Smith & Liz Fischer
@@ -15,6 +15,6 @@ In the not-so-distant future, Starblaze has outpaced its megacorp rivals to beco
   
 Still, accidents happen: there are serious threats that lurk in the sprawling voids of space, and freighters occasionally go offline. In such cases, Starblaze calls in its Core Retrieval Forces (CRFs) to recover the costly plutonium cores that power its fleet’s spaceflight.
 
-In [REDACTED], you’ll play as a member of one such CRF — underpaid, overexploited, and all in all too old for this crap. As you race to recover the nuclear core at the heart of a derelict spaceship, you’ll have to be ready for anything: there’s more out there than EMP blasts and asteroids.
+In DERELICT, you’ll play as a member of one such CRF — underpaid, overexploited, and all in all too old for this crap. As you race to recover the nuclear core at the heart of a derelict spaceship, you’ll have to be ready for anything: there’s more out there than EMP blasts and asteroids.
 
 When the going gets tough, though, just remember: “Starblaze Believes in Humanity” (just not health insurance).
