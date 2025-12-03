@@ -4,7 +4,7 @@ title: "The Stone Collector"
 description: 
 date: 2022-12-30
 weight: 5
-thumbnail:  "/assets/images/gen/projects/stone-collector-1.png"
+thumbnail:  "/assets/images/gen/projects/stone-collector-3.png"
 image: "/assets/images/gen/projects/stone-collector-2.png"
 categories: ["Short Film"]
 credits:
