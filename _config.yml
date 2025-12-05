@@ -1,189 +1,397 @@
-# -------------------
-# Jekyll Config
-# --------------------
-baseurl: ""
-url: ""
-permalink: pretty
-markdown: kramdown
-highlighter: rouge
-future: true
+#
+# Sera - OnePage Jekyll Theme
+# Configuration File
+#
 
-# Plugins
-plugins:
-  - jekyll-environment-variables
-  - jekyll-paginate
+# Information for compile
+exclude: ["Gemfile", "README.md"]
 
-paginate: 6
-paginate_path: "/blog/page/:num"
-
-# Collections
-collections_dir: collections
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:path/
-  posts:
-    output: true
-    permalink: /blog/:path/
-
-# Pages
-defaults:
-  - scope:
-      path: ""
-      type: projects
-    values:
-      layout: project
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      weight: 999
-  - scope:
-      path: "images"
-    values:
-      image: true
-  - scope:
-      path: "categories"
-    values:
-      permalink: /category/:basename/
-  - scope:
-      path: "pages"
-    values:
-      permalink: /:basename/
-
-# SCSS
+# Sass configuration
 sass:
-  style: compact
+  sass_dir: _scss
 
-# Excludes
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENSE
-  - netlify.toml
+# Information for deploy
+baseurl: ""
+
+# the base hostname & protocol for your site
+url: "http://localhost:4000"
+
+####################################
+######   Optional Features    ######
+####################################
+smooth-scroll: false
+
+####################################
+###########   Plugins    ###########
+####################################
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: "archive"
+  permalinks:
+    category: "/category/:name/"
+    tag: "/tag/:name/"
+
+#######################################################
+#######################################################
+###############   HEADER INFORMATIONS   ###############
+#######################################################
+#######################################################
+
+# This is your site title
+title: Derelict | Wax River
+# Website language
+lang: en-US
+# Header Title
+header-title: Derelict
+# Header Tagline
+header-tagline: Wax River Presents
+
+####################################
+######   CTA Header Buttons   ######
+####################################
+
+# Focus Buttons
+#header-focus-button:
+#  title: Download Now
+#  url: https://themeforest.net/collections/6069390-sera
+#
+## Secondary Buttons
+#header-secondary-button:
+#  title: Discover More
+#  url: http://themeforest.net/user/ohkimur
+
+#
+# This is your email adress, contact from send here all emails from contact section
+# IMPORTANT: you can modify contact form from this static template, but now works contact form works with a free external server
+# To configure this contact form, first please send a fictive email afeter you enter below your email and verify that :)
+#
+formspree: mdkqzrpd
+
+# Offer Banner Link
+# Default link is a link to all Sera OnePage products
+banner-link: https://themeforest.net/collections/6069390-sera
+
+####################################
+######  Global Social Links   ######
+####################################
+youtube: "#"
+pinterest: "#"
+facebook: "#"
+twitter: "#"
+google-plus: "#"
+vimeo: "#"
+
+#########################
+######   Widgets   ######
+#########################
+
+#
+# About Blog Author Widget
+#
+about-widget:
+  author-avatar: avatars/logo_black.png
+  author-name: Wax River
+  author-tagline: Blog Author
+  author-info: Updates from the development team at Wax River.
+  author-social-links:
+    youtube: "#"
+    pinterest: "#"
+    facebook: "#"
+    twitter: "#"
+    google-plus: "#"
+
+# Google Map JS api
+key-api: YOUR_GOOGLE_MAP_API_KEY
+map-text: Sera Google Map
+map-lat: 44.4267674
+map-lng: 26.102538399999958
+
+# Enter your Mailchimp User ID and Campaign ID
+# @TODO: Add in a link for where to find these
+mailchimp:
+  user-id: REPLACEME
+  list-id: REPLACEME
+
+####
+#
+# Hi you now use Sera - OnePage Jekyll Theme created by Ohkimur
+#
+# Below are each section from the website in order from top to bottom
+# @TODO Edit each sections with your real information and each section from Sera will autocomplete with your information
+#
+####
+
+#####################################
+#############   About   #############
+#####################################
+about-title: Welcome to Starblaze
+#about-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed, suscipit et nisi. Nulla a tellus at turpis gravida congue non sed nisl.
+
+#####################################
+#############  Features  ############
+#####################################
+features-title: Game Play
+features-description: Derelict is a cooperative sci-fi board game for 2-4 players.
+
+#
+# Features
+#
+features:
+  # Feature
+  - title: Choose Your Character
+    description: Select one of five playable characters—the pilot, the medic, the astrobiologist, the stevedore, or the mechanic.
+    icon: pe-7s-users
+
+  # Feature
+  - title: Explore the Ship
+    description: Avoid hazards, gather items, and uncover clues about what fate befell the derelict vessel's crew.
+    icon: pe-7s-search
+
+  # Feature
+  - title: Escape with the Core
+    description: Confront one of 35 unique scenarios as you dash for the exit, nuclear core in tow.
+    icon: pe-7s-prev
+
+#####################################
+############  Portfolio  ############
+#####################################
+portfolio-title: Portfolio
+portfolio-description: Maecenas tempus nec mi et placerat. Duis at odio vitae ex gravida volutpat. Nulla finibus aliquet diam ut eleifend. Mauris consequat interdum quam. Mauris dui sapien, efficitur et cursus id, molestie fringilla turpis.
+
+#
+# Portfolio Grid
+#
+portfolio-categories:
+  [Websites, Logo, Graphic Design, Development, Video, Photography]
+portfolio:
+  # Portfolio Item
+  - title: S<span class="thin">era</span> Style
+    categories: [Websites, Graphic Design]
+    image: img-01.jpg
+    url: "#"
+
+  # Portfolio Item
+  - title: S<span class="thin">era</span> Style
+    categories: [Graphic Design, Logo, Websites]
+    image: img-02.jpg
+    url: "#"
+
+  # Portfolio Item
+  - title: S<span class="thin">era</span> Style
+    categories: [Graphic Design, Logo, Photography]
+    image: img-03.jpg
+    url: "#"
+
+  # Portfolio Item
+  - title: S<span class="thin">era</span> Style
+    categories: [Websites, Video, Photography]
+    image: img-04.jpg
+    url: "#"
+
+  # Portfolio Item
+  - title: S<span class="thin">era</span> Style
+    categories: [Development, Logo]
+    image: img-05.jpg
+    url: "#"
+
+  # Portfolio Item
+  - title: S<span class="thin">era</span> Style
+    categories: [Development, Video]
+    image: img-06.jpg
+    url: "#"
+
+  # Portfolio Item
+  - title: S<span class="thin">era</span> Style
+    categories: [Websites, Graphic Design]
+    image: img-07.jpg
+    url: "#"
+
+  # Portfolio Item
+  - title: S<span class="thin">era</span> Style
+    categories: [Websites, Video]
+    image: img-08.jpg
+    url: "#"
+
+  # Portfolio Item
+  - title: S<span class="thin">era</span> Style
+    categories: [Photography, Logo]
+    image: img-09.jpg
+    url: "#"
+
+#####################################
+##########  Core Features  ##########
+#####################################
+core-title: Gameplay
+core-description: Derelict is a cooperative sci-fi board game for 2-4 players.
 
 
-# -------------------
-# Theme Config
-# --------------------
-title: "Wax River Studios"
-category_dir: category
+#
+# Core Features Left
+#
+core-features-left:
+  # Feature
+  - name: Assemble Your Squad
+    description: Choose from five playable characters with unique strengths, weaknesses, and special abilities.
+    icon: fa- solid fa-people-group
 
-colors:
-  #light-mode colors
-  primary_bg: "#0d042b"
-  primary_bg_2: "#0d042b"
-  primary_bg_3: "#0d042b"
-  primary_text: "#fdfcf9"
-  base_bg: "#fdfcf9"
-  base_bg_2: "#f7f6ed"
-  base_bg_3: "#faebd7"
-  base_text: "#0d042b"
-  base_text_2: "#3b364c"
-  logo_text: "#0d042b"
-  header_text: "#0d042b"
+  # Feature
+  - name: Explore a Mysterious Spaceship
+    description: Dynamically reveal rooms, pick up valuable items, gather evidence, and overcome hazards as you map out the vessel.
+    icon: fa-solid fa-magnifying-glass
 
-  # dark-mode colors
-  primary_bg_dark: "#fdfcf9"
-  primary_bg_2_dark: "#fdfcf9"
-  primary_bg_3_dark: "#fdfcf9"
-  primary_text_dark: "#0b0326"
-  base_bg_dark: "#0b0326"
-  base_bg_2_dark: "#150c32"
-  base_bg_3_dark: "#251654"
-  base_text_dark: "#f5f5ec"
-  base_text_2_dark: "#929eaf"
-  logo_text_dark: "#fdfcf9"
-  header_text_dark: "#fdfcf9"
+  # Feature
+  - name: Recover the Core
+    description: Your mission? Reach the derelict’s engine room and recover its nuclear fuel source. Decide which squadmate will take custody of the delicate core before the treacherous return journey to your ship.
+    icon: fa-solid fa-circle-radiation
 
-fonts:
-  use_google_fonts: false
-  google_fonts_url: "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,700&family=Fira+Mono&display=swap"
-  use_self_hosted_fonts: true # font files must be placed in /assets/fonts folder and the @font-face definitions must be added to /assets/css/fonts.css
-  heading: "'DM Sans'"
-  base: "'DM Sans'"
-  monospace: "'Fira Mono'"
-  logo: "'DM Sans'"
+#
+# Core Features Right
+#
+core-features-right:
+  # Feature
+  - name: Fight Diverse Foes
+    description: Battle (or do your best to evade) a wide-ranging cast of human, beast, and automaton enemies, protecting the plutonium core at all costs.
+    icon: fa-solid fa-user-ninja
 
-logo:
-  logo_text: "Wax River"
-  logo_image: assets/images/logo/logo.png
-  logo_image_mobile: assets/images/logo/logo.png
-  logo_image_invert: assets/images/logo/logo-invert.png
-  logo_image_invert_mobile: assets/images/logo/logo-invert.png
-  logo_image_desktop_height: "28px"
-  logo_image_desktop_width: "28px"
-  logo_image_mobile_height: "28px"
-  logo_image_mobile_width: "28px"
-  show_logo_image_on_mobile: true
-  show_logo_image_on_desktop: true
-  show_logo_text_on_mobile: false
-  show_logo_text_on_desktop: true
+  # Feature
+  - name: Escape With the Goods
+    description: Make it back to your ship with the core (ideally with your full squad intact!) to notch up a win.
+    icon: fa-solid fa-arrow-right-from-bracket
 
-header: 
-  fixed: false
+  # Feature
+  - name: Come Back for More
+    description: With randomized room layouts, dozens of discoverable items, and 35 possible endgame scenarios, you’re bound to see something new with every replay!
+    icon: fa-solid fa-shuffle
 
-open_graph:
-  meta_opengraph_type: "website"
-  meta_twitter_card: "summary"
-  meta_twitter_site: "@zerostaticio"
-  meta_twitter_creator: "@zerostaticio"
+#####################################
+############# Our Blog ##############
+#####################################
+blog-title: Our Blog
+blog-description: Development updates and more!
 
-darkmode:
-  enable_dark_mode: true
-  show_dark_mode_toggle_in_header: false
-  show_dark_mode_toggle_in_bottom: true
-  show_dark_mode_toggle_in_mobile_menu: true
+#####################################
+############### Team ################
+#####################################
+team-title: Meet Our Team
+team-description: Wax River is an indie board game studio based in Washington and Texas.
 
-cookie_banner:
-  enabled: true
-  show_manage_cookies_at_bottom: true
+#
+# Team Members
+#
+team:
+  # Team Member
+  - name: Ryan P. Smith
+    tagline: Writer & Designer
+    avatar: ryan.jpg
 
-analytics:
-  google_analytics_id: "" # G-XXXXXXXXXX
-  gtm_id: "" # GTM-XXXXXXXX
-  plausible_data_domain: "" # example: mywebsite.com
-  umami_data_website_id: "" # example: "ddd14336-5fb0-4cdd-8f32-e1bfa906cc2b"
-  umami_src: "" # "https://analytics.eu.umami.is/script.js"
+    # Social Links
+    bluesky: "https://bsky.app/profile/writerlyryan.bsky.social"
 
-comments:
-  commento:
-    enabled: false # you must have a commento account and be on the correct domain. does not work locally.
-  disqus:
-    shortname: "" # Your disqus shortcode for example "zerostatic". leave this blank ie "" to disable.
+  # Team Member
+  - name: Liz Fischer
+    tagline: Co-Designer & Production
+    avatar: liz.jpg
 
-newsletter:
-  mailchimp:
-    form_action_url:
-    form_title: "Let's keep in touch"
+    # Social Links
+    bluesky: "https://bsky.app/profile/lizfischer0.bsky.social"
 
-contact_form: 
-  use_netlify_form: true
-  use_formspree_form: false
-  formspree_endpoint:
-  netlify_form_name: "contact"
 
-menu: 
-  show_dropdown_items_in_mobile_menu: false
-  show_social_media_in_mobile_menu: true
 
-footer:
-  enable_footer: true # show/hide the entire footer
-  footer_title: "Wax River Studios"
-  footer_description: "Games and film"
-  enable_social_media_icons: true
-  enable_contact_details: false
-  enable_menu_footer_primary: true
-  enable_menu_footer_secondary: true
-  enable_menu_footer_tertiary: false
-  footer_primary_menu_title: "Our Projects"
-  footer_secondary_menu_title: "Company"
-  footer_tertiary_menu_title: "Other"
+#####################################
+############   Contact   ############
+#####################################
+contact-title: Contact Us
+contact-description: Questions? Send us a message!
 
-bottom:
-  enable_bottom: false # show/hide the entire bottom (below the footer)
-  enable_bottom_menu: false # if enabled, the bottom menu can be edited in `_data/menu.yml`
-  copyright_text: "© 2024"
-  show_rss_icon: false
+#####################################
+#############   Footer   ############
+#####################################
+footer-description:
+footer-copyright-text: Wax River
+footer-copyright-url:
+footer-copyright-year: 2025
+
+
+#####################################
+########## Pricing Tables ###########
+#####################################
+pricing-title: Pricing Tables
+pricing-description: Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed, suscipit et nisi. Nulla a tellus at turpis gravida congue non sed nisl. Pellentesque scelerisque eu neque et tincidunt.
+
+#
+# Plan Personal
+#
+plan-personal-price: $99
+plan-personal-offer-1-title: 01 PSD Pack
+plan-personal-offer-1-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-personal-offer-2-title: 100 Support Tickets
+plan-personal-offer-2-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-personal-url: "#"
+
+#
+# Plan Business
+#
+plan-business-price: $499
+plan-business-offer-1-title: 05 PSD Pack
+plan-business-offer-1-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-business-offer-2-title: 1000 Support Tickets
+plan-business-offer-2-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-business-url: "#"
+
+#
+# Plan Ultimate
+#
+plan-ultimate-price: $999
+plan-ultimate-offer-1-title: 10 PSD Pack
+plan-ultimate-offer-1-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-ultimate-offer-2-title: Support Unlimited
+plan-ultimate-offer-2-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-ultimate-url: "#"
+
+
+#####################################
+########### Testimonials ############
+#####################################
+testimonials-title: Testimonials
+testimonials-description: Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed, suscipit et nisi.
+
+#
+# Testimonials
+#
+testimonials:
+  # Client
+  - name: Johnatan Doe
+    url: http://themeforest.net
+    url-text: ThemeForest.net
+    avatar: avatar-01.jpg
+    cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+    logo-img: themeforest.png
+
+  # Client
+  - name: Adam Smith
+    url: http://codecanyon.net
+    url-text: CodeCanyon.net
+    avatar: avatar-02.jpg
+    cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+    logo-img: codecanyon.png
+
+  # Client
+  - name: Irene Warner
+    url: http://videohive.net
+    url-text: VideoHive.net
+    avatar: avatar-03.jpg
+    cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+    logo-img: videohive.png
+
+  # Client
+  - name: Richard Ryan
+    url: http://audiojungle.net
+    url-text: AudioJungle.net
+    avatar: avatar-04.jpg
+    cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+    logo-img: audiojungle.png
