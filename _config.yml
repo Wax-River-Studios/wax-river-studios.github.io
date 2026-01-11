@@ -237,7 +237,7 @@ core-features-left:
   # Feature
   - name: Assemble Your Squad
     description: Choose from five playable characters with unique strengths, weaknesses, and special abilities.
-    icon: fa- solid fa-people-group
+    icon: fa-solid fa-people-group
 
   # Feature
   - name: Explore a Mysterious Spaceship
