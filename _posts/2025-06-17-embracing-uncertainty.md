@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Embracing the Uncertainty of the Ghost Ship"
-tagline: Single Page
+tagline: Blog
 date: 2025-06-17 12:51
 categories: [Reflection]
 tags: []
