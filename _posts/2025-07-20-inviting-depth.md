@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Depth That’s Inviting"
-tagline: Single Page
+tagline: Blog
 date: 2025-07-20 12:51
 categories: [Reflection]
 tags: []

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Horror, Humor, and the Power of Friendship"
-tagline: Single Page
+tagline: Blog
 date: 2025-05-11 12:51
 categories: [Reflection]
 tags: []
