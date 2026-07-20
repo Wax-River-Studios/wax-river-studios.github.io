@@ -14,6 +14,7 @@ section.offer-section {
   h2 {
     text-transform: uppercase;
     font-size: 1.75rem;
+    font-weight: 900;
     padding: 1.125rem 0;
   }
 
@@ -29,10 +30,12 @@ section.offer-section {
   .button-cta {
     margin-bottom: 0;
     background-color: #5865F2;
+    border: none;
     
   }
-  .button-cta:hov{
+  .button-cta:hover{
     background-color: #2934A4;
+    border: none;
   }
   
 }
